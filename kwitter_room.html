@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Project 94</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body>
+        <center>
+            <div>
+                <h1 id="kr">Kw/Quitter Room</h3>
+                <br>
+                <br>
+                <br>
+                <div id="style">
+                    <br>
+                    <h2 id="greet"></h2>
+                    <br>
+                    <br>
+                    <button id="log" type="button" onclick="logout()">Logout</button>
+                    <br>
+                    <br>
+                    <br>
+                    <input id="input" type="text" id="room_name" placeholder="Enter room name">
+                    <br>
+                    <br>
+                    <hr>
+                    <div id="output"></div>
+                    <br>
+                    <button id="confirm" type="button" onclick="addRoom()">Confirm your room</button>
+                    <br>
+                    <br>
+            </div>
+        </div>
+        </center>
+        <script src="kwitter_room.js"></script>
+    </body>
+    <style>
+        body{
+            background-color: firebrick;
+        }
+
+        #kr{
+            color:aqua;
+            margin-top: 20px;
+        }
+
+        #style{
+            background-color: aqua;
+            width: 450px;
+            border-radius: 10px;
+        }
+
+        #confirm, #log{
+            font-size: 20px;
+            color:aqua;
+        }
+
+        #confirm, #log{
+            background-color: firebrick;
+        }
+
+        #greet{
+            color: firebrick;
+        }
+    </style>
+</html>

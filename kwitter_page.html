@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Project 96</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body>
+        <button id="back" onclick="back()">Back</button>
+        <br>
+        <br>
+        <h1 id="chat">Kw/Quitter Chat Room</h2>
+        <br>
+        <br>
+        <br>
+        <div id="chatting">
+            <br>
+        </div>
+        <div id="send">
+            <br>
+            <br>
+            <label id="cheddar">Message:</label>
+            <br>
+            <input type="text" id="chatter" placeholder="Type here to chat!">
+            <br>
+            <br>
+            <button type="button" onclick="send()" id="chitter">Send</button>
+            <br>
+            <br>
+        </div>
+        <script src="kwitter_page.js"></script>
+    </body>
+    <style>
+        body{
+           background-color: firebrick;
+           text-align: center; 
+        }
+
+        #back{
+            background-color: aqua;
+            margin-top: 10px;
+            font-size: 20px;
+            color: firebrick;
+        }
+
+        #chat{
+            color: aqua;
+        }
+
+        #chatting{
+            background-color: aqua;
+            margin-bottom: 500px;
+        }
+
+        #chitter{
+            color: aqua;
+            background-color: firebrick;
+        }
+
+        #chatter{
+            width: 250px;
+            height: 25px;
+            border-color: aqua;
+        }
+
+        #cheddar{
+            color: firebrick;
+        }
+
+        #send{
+            background-color:aqua;
+            border-radius: 10px;
+        }
+    </style>
+</html>
